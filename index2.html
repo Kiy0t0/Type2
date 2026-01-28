@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewportt2" content="width=device-width, initial-scale=1">
+    <title>ARtype2</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body style="margin: 0; background-color: #f0f0f0;">
+
+    <model-viewer 
+        src="modelt2.glb" 
+        ios-src="modelt2.usdz"
+        ar 
+        ar-modes="scene-viewer quick-look" 
+        ar-scale="fixed"
+        camera-controls 
+        shadow-intensity="1" 
+        style="width: 100%; height: 100vh;">
+        
+        <button slot="ar-button" style="
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            z-index: 1000;
+        ">
+            ARで実寸を見る
+        </button>
+        
+    </model-viewer>
+
+</body>
+</html>
